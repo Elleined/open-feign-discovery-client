@@ -22,3 +22,7 @@ money not getting a response is frustrating.
 
 # Check this repository because it is the microservice that I will be using
 [author-book-genre-api](https://github.com/Elleined/book-author-genre-rest-api.git)
+
+# Tips
+- You can just copy the method signature of your microservice in feign client and it will work
+- when you dont have access in microservice project you can ask them two question what is Return Type and the endpoint
