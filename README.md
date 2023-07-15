@@ -26,3 +26,6 @@ money not getting a response is frustrating.
 # Tips
 - You can just copy the method signature of your microservice in feign client and it will work
 - when you dont have access in microservice project you can ask them two question what is Return Type and the endpoint
+
+# You can test my feign client that are calling my other microservice via postman easily
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/26932885-50b24c11-3002-46ca-ab2d-fe7e64227e0a?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D26932885-50b24c11-3002-46ca-ab2d-fe7e64227e0a%26entityType%3Dcollection%26workspaceId%3D1025f89f-d385-4194-8336-c923f55680b5)
