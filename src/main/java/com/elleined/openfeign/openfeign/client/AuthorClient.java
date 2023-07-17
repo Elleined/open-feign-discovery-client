@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "author-api", url = "http://localhost:8080/api/v1/authors")
+@FeignClient(name = "BOOK-AUTHOR-GENRE-REST-API", path = "/api/v1/authors")
 public interface AuthorClient {
     @GetMapping
     List<AuthorDTO> getAll() ;
