@@ -21,38 +21,7 @@ money not getting a response is frustrating.
 - We can use WebClient because its resolve all the resttemplate problems. But we can also use OpenFeign because it uses the Spring Web Annotations to easily integrate and it comes with loadbalancer automatically implemented which is in round-robin passion.
 
 # How to use OpenFeign
-- First visit this repository to be your eureka-discovery-service [eureka-server](https://github.com/Elleined/eureka-discovery-service)
-- Now that you cloned and run that project add this dependency
-```
-<dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
-</dependency>
-<dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-</dependency>
-<dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-</dependency>
-```
-- And you main class should look like this
-```
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-@SpringBootApplication
-@EnableFeignClients
-@EnableDiscoveryClient
-public class RestaurantService{
-   public static void main(String[] args) {
-      SpringApplication.run(RestaurantService.class, args);
-   }
-}
-```
-
+- Luckily for you this repository is a open feign discovery client and also load balancer has already setup
 
 # Check this repository because it is the microservice that I will be using
 [author-book-genre-api](https://github.com/Elleined/book-author-genre-rest-api.git)
