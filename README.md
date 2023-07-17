@@ -28,11 +28,13 @@ money not getting a response is frustrating.
 
 # Why use OpenFeign instead of WebClient
 - We can use WebClient because its resolve all the resttemplate problems. But we can also use OpenFeign because it uses the Spring Web Annotations to easily integrate and it comes with loadbalancer automatically implemented which is in round-robin passion.
+# Setup Discovery Service
+- Check this repository [discovery-service](https://github.com/Elleined/eureka-discovery-service)
 
 # How to use OpenFeign
 - Luckily for you this repository is a open feign discovery client and also load balancer has already setup
 
-# Check this repository because it is the microservice that I will be using
+# Microservice project
 [author-book-genre-api](https://github.com/Elleined/book-author-genre-rest-api.git)
 
 # Tips
