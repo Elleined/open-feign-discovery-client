@@ -11,7 +11,7 @@ import java.util.List;
 @FeignClient(name = "BOOK-AUTHOR-GENRE-REST-API", path = "/api/v1/authors")
 public interface AuthorClient {
     @GetMapping
-    List<AuthorDTO> getAll() ;
+    List<AuthorDTO> getAll();
 
     @GetMapping("/get-all-by-id")
     List<AuthorDTO> getAllById(@RequestParam("ids") List<Integer> authorIds);
