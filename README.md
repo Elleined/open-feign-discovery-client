@@ -1,5 +1,5 @@
-# open-feign-client
-Creating a open feign client that will call/invoke other Microservices
+# open-feign-discovery-client
+Creating a open feign discovery client that will call/invoke other Microservices and comes with load balancer
 
 # What is open feign
 - Is an alternative for RestTemplate for calling or invoking other microservice that is developed by netflix and later abandoned.
