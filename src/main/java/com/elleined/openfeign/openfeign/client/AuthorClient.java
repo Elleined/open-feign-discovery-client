@@ -2,13 +2,11 @@ package com.elleined.openfeign.openfeign.client;
 
 import com.elleined.openfeign.openfeign.dto.AuthorDTO;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "author-api", url = "http://localhost:8080/api/v1/authors")
+@FeignClient(name = "book-author-genre-api")
 public interface AuthorClient {
     @GetMapping
     List<AuthorDTO> getAll() ;
@@ -42,12 +40,12 @@ public interface AuthorClient {
                            @PathVariable String sortProperty);
 
     @PostMapping
-    ResponseEntity<?> save(@RequestBody AuthorDTO authorDTO);
+    AuthorDTO save(@RequestBody AuthorDTO authorDTO);
 
     @PostMapping("/save-all")
-    ResponseEntity<?> saveAll (@RequestBody List<AuthorDTO> authors);
+    List<AuthorDTO> saveAll (@RequestBody List<AuthorDTO> authors);
 
     @PutMapping("/{id}")
-    ResponseEntity<?> update(@PathVariable("id") int authorId,
+    AuthorDTO update(@PathVariable("id") int authorId,
                              @RequestBody AuthorDTO authorDTO);
 }
