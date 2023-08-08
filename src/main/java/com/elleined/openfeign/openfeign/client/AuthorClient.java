@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "book-author-genre-api")
+@FeignClient(name = "book-author-genre-api", url = "/api/v1/authors")
 public interface AuthorClient {
     @GetMapping
-    List<AuthorDTO> getAll() ;
+    List<AuthorDTO> getAll();
 
     @GetMapping("/get-all-by-id")
     List<AuthorDTO> getAllById(@RequestParam("ids") List<Integer> authorIds);
