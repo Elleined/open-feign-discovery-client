@@ -1,5 +1,5 @@
 # open-feign-discovery-client
-Creating a open feign discovery client that will call/invoke other Microservices and comes with load balancer
+Creating a open feign discovery client that will make a request to other external service.
 
 # What is open feign
 - Is an alternative for RestTemplate for calling or invoking other microservice that is developed by netflix and later abandoned.
@@ -25,6 +25,9 @@ money not getting a response is frustrating.
 # Tips
 - You can just copy/paste the method signature of your microservice in feign client and it will work.
 - When you dont have access in microservice project you can ask them two question what is Return Type and the Endpoint.
+
+# Extra configuration with discovery server
+- When you the external service and this project a discovery client both that connects to discovery server you can just use the name of the external service inside @FeignClient(name = "<externalServiceNameRegisteredInDiscoveryServer>") and specify one the context path + endpoints ignoring the hostname, hostport thus promoting scalability.
 
 # You can test my feign client that are calling my other microservice via postman easily
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/26932885-50b24c11-3002-46ca-ab2d-fe7e64227e0a?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D26932885-50b24c11-3002-46ca-ab2d-fe7e64227e0a%26entityType%3Dcollection%26workspaceId%3D1025f89f-d385-4194-8336-c923f55680b5)
